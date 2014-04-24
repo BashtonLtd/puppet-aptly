@@ -17,7 +17,7 @@
 
 ## Usage
 ### aptly
-It only install upstream aptly repo into apt/sources.lists.d/ and install aptly
+It only install upstream aptly repo into apt/sources.list.d/ and install aptly
 it self.
 
 `include aptly`
