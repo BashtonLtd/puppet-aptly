@@ -1,0 +1,18 @@
+{
+  "rootDir": "<%= rootdir %>",
+  "downloadConcurrency": 4,
+  "architectures": [
+<% @architectures.each do |arch| -%>
+    "<%= arch %>",
+<% end -%>
+  ],
+  "dependencyFollowSuggests": false,
+  "dependencyFollowRecommends": false,
+  "dependencyFollowAllVariants": false,
+  "dependencyFollowSource": false,
+  "gpgDisableSign": false,
+  "gpgDisableVerify": false,
+  "downloadSourcePackages": false,
+  "ppaDistributorID": "ubuntu",
+  "ppaCodename": ""
+}

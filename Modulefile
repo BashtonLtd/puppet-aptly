@@ -1,0 +1,10 @@
+name    'vorlock-aptly'
+version '0.1.0'
+source  'https://github.com/BashtonLtd/puppet-aptly'
+author  'Marcin Kulisz'
+license 'Apache License 2.0'
+summary 'Aptly Module'
+description  'aptly (Debian repository management tool) module for puppet'
+project_page 'https://github.com/BashtonLtd/puppet-aptly'
+
+dependency 'puppetlabs/apt'
