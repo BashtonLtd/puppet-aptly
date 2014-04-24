@@ -1,8 +1,16 @@
 # puppeet-aptly
 
 ####Table of Contents
-1. [Requirements](#requirements)
-2. [Usage](#usage)
+1. [License](#license)
+2. [Requirements](#requirements)
+3. [Usage](#usage)
+
+## License
+```
+                                 Apache License
+                           Version 2.0, January 2004
+                        http://www.apache.org/licenses/
+```
 
 ## Requirements
 * puppetlabs/apt
@@ -11,6 +19,7 @@
 ### aptly
 It only install upstream aptly repo into apt/sources.lists.d/ and install aptly
 it self.
+
 `include aptly`
 
 ### aptly::conf
