@@ -1,11 +1,7 @@
 {
   "rootDir": "<%= rootdir %>",
   "downloadConcurrency": 4,
-  "architectures": [
-<% @architectures.each do |arch| -%>
-    "<%= arch %>",
-<% end -%>
-  ],
+  "architectures": [<%= '"'+@architectures*'","'+'"' %>],
   "dependencyFollowSuggests": false,
   "dependencyFollowRecommends": false,
   "dependencyFollowAllVariants": false,
