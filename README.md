@@ -27,12 +27,15 @@ Configures aptly by creating /etc/aptly.conf file.
 ```
   class {'aptly::conf':
     rootdir       => '/mnt/aptly',
+    server_port   => '80',
     architectures => ['i386','amd64']
   }
 ```
 Parameters:
 
   rootdir - where all aptly created repo data is going to be storred
+
+  server_port - port on which aptly server will listen (default is 82)
 
   architectures - what architectures aptly should support, default is amd64
     but there can be more, all which are supported by distro kernel

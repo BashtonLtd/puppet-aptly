@@ -1,0 +1,16 @@
+# aptly server upstart script
+
+start on (net-device-up and local-filesystems and runlevel [2345])
+stop on runlevel [016]
+
+# Automatically restart process if crashed
+respawn
+
+script
+  echo $$ > /var/run/aptly-server.pid
+  exec aptly serve -listen=:<%= server_port %>
+end script
+
+post-stop script
+    rm -f /var/run/aptly-server.pid
+end script
